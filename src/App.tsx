@@ -14,11 +14,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/interactive-prezi/" element={<Home />}></Route>
-        <Route
-          path="/interactive-prezi/presentation"
-          element={<Presentation />}
-        />
+        <Route path="*" element={<Home />}></Route>
+        <Route path="/presentation" element={<Presentation />} />
         {/* <Route path="*" element={<NoPage />} /> */}
       </Routes>
     </BrowserRouter>

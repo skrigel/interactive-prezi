@@ -46,7 +46,7 @@ function Home() {
 
         {/* Render the icon dynamically */}
         <FlexBox>
-          <Link to="/interactive-prezi/presentation">Go to Presentation</Link>
+          <Link to="presentation">Go to Presentation</Link>
         </FlexBox>
       </div>
     </>
