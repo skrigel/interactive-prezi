@@ -9,14 +9,17 @@ import Presentation from "./components/Presentation";
 import React, { StrictMode, createContext } from "react";
 import ReactDOM from "react-dom/client";
 import NoPage from "./components/NoPage";
-
+// import "./index.css";
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="presentation" element={<Presentation />} />
-        <Route path="*" element={<NoPage />} />
+        <Route path="/interactive-prezi/" element={<Home />}></Route>
+        <Route
+          path="/interactive-prezi/presentation"
+          element={<Presentation />}
+        />
+        {/* <Route path="*" element={<NoPage />} /> */}
       </Routes>
     </BrowserRouter>
   );
